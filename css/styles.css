@@ -251,6 +251,7 @@ img {
   flex-wrap: wrap;
 }
 .person-card {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   flex-basis: calc((100% - 90px) / 4);
   background-color: var(--some-bkg-color);
 }
@@ -301,7 +302,6 @@ footer {
 address {
   font-style: normal;
 }
-
 .mail {
   margin-bottom: 9px;
 }
