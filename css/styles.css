@@ -226,8 +226,7 @@ img {
 .team {
   background-color: var(--team-bkg-color);
 }
-.team-container {
-}
+
 .team-faces {
   font-weight: 500;
   font-size: 16px;
