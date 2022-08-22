@@ -41,9 +41,8 @@ p {
 }
 ul,
 ol {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -51,13 +50,11 @@ img {
   height: auto;
 }
 .container {
-  display: flex;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: space-between;
 }
 .section {
   padding-top: 94px;
@@ -65,16 +62,12 @@ img {
 }
 
 /* header */
-
-.page-head {
-  padding-top: 28px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-header);
+.header-box {
+  display: flex;
+  justify-content: space-between;
 }
-.container-hero {
-  flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.page-head {
+  border-bottom: 1px solid var(--border-header);
 }
 .logo-header {
   color: var(--accent-color);
@@ -90,6 +83,7 @@ img {
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -102,6 +96,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -121,15 +116,23 @@ img {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
 }
 .contacts {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
 /* hero */
 .hero-part {
   background-color: var(--hero-footer-bkg-color);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
   font-weight: 900;
@@ -203,6 +206,9 @@ img {
   margin-right: auto;
   gap: 30px;
 }
+.feature-item {
+  width: 270px;
+}
 
 .feature-about {
   font-weight: 400;
@@ -219,6 +225,16 @@ img {
   color: var(--article-color);
 
   margin-bottom: 50px;
+}
+.examples {
+  padding-top: 0;
+}
+.container-examples {
+  display: flex;
+  gap: 30px;
+}
+.example-img {
+  width: 370px;
 }
 
 /* team part */
@@ -244,7 +260,7 @@ img {
 }
 .team-container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 .person-card {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -252,7 +268,7 @@ img {
   background-color: var(--some-bkg-color);
 }
 .person {
-  padding: 30px 70px;
+  padding: 30px;
 }
 
 .team-title {
@@ -269,11 +285,7 @@ img {
 footer {
   background-color: var(--hero-footer-bkg-color);
 }
-.foot-container {
-  flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .logo-footer {
   color: var(--accent-color);
   font-family: var(--secondary-font);
@@ -281,6 +293,7 @@ footer {
   font-size: 26px;
   line-height: 1.2;
 
+  display: inline-block;
   margin-bottom: 20px;
 }
 .logo-part-footer {
@@ -290,15 +303,19 @@ footer {
   line-height: 1.7;
   color: var(--contacts-color);
 }
+.foot-navigation {
+  display: inline-block;
+}
 .foot-navigation-map {
   line-height: 1.7;
   color: var(--some-text-color);
-  margin-bottom: 9px;
 }
 address {
   font-style: normal;
 }
+.foot-navigation-map,
 .mail {
+  display: inline-block;
   margin-bottom: 9px;
 }
 
@@ -322,11 +339,15 @@ address {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  padding: 6px 22px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--some-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons {
   display: flex;
@@ -340,6 +361,7 @@ address {
   font-size: 18px;
   line-height: 2;
   color: var(--article-color);
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -348,26 +370,20 @@ address {
   color: var(--main-text-color);
 }
 .our-projects {
+  margin-right: -30px;
+  margin-bottom: -30px;
   display: flex;
   flex-wrap: wrap;
 }
 .card {
-  margin-bottom: 30px;
-  flex-basis: calc((100% - 60px) / 3);
-}
-.card:not(:nth-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-.card:not(:nth-child(3n)) {
   margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
+
 .card-content {
   padding: 20px 24px;
   border-right: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
   border-left: 1px solid var(--card-border);
 }
-
-/* homework3 */
-
-/* footer */
