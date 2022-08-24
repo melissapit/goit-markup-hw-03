@@ -191,6 +191,7 @@ img {
 }
 
 .feature {
+  font-size: 14px;
   font-family: var(--main-font);
   font-weight: 700;
   line-height: 1.14;
@@ -285,6 +286,10 @@ img {
 footer {
   background-color: var(--hero-footer-bkg-color);
 }
+.foot-page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .logo-footer {
   color: var(--accent-color);
@@ -303,6 +308,9 @@ footer {
   line-height: 1.7;
   color: var(--contacts-color);
 }
+.contact-f {
+  margin-bottom: 9px;
+}
 .foot-navigation {
   display: inline-block;
 }
@@ -312,11 +320,6 @@ footer {
 }
 address {
   font-style: normal;
-}
-.foot-navigation-map,
-.mail {
-  display: inline-block;
-  margin-bottom: 9px;
 }
 
 /* portfolio page */
